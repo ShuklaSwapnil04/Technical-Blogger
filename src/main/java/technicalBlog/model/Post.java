@@ -2,7 +2,18 @@ package technicalBlog.model;
 
 import java.util.Date;
 //POJO CLASS
+
 public class Post {
+    private int abc;
+
+    public int getAbc() {
+        return abc;
+    }
+
+    public void setAbc(int abc) {
+        this.abc = abc;
+    }
+
     private int  id;
     private String title;
     private String body;
