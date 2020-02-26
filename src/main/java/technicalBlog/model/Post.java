@@ -4,28 +4,10 @@ import java.util.Date;
 //POJO CLASS
 
 public class Post {
-    private int abc;
 
-    public int getAbc() {
-        return abc;
-    }
-
-    public void setAbc(int abc) {
-        this.abc = abc;
-    }
-
-    private int  id;
     private String title;
     private String body;
     private Date date;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
@@ -51,3 +33,4 @@ public class Post {
         this.date = date;
     }
 }
+
