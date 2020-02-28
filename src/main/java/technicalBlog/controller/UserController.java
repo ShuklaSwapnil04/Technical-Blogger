@@ -13,7 +13,16 @@ import java.util.ArrayList;
 
 @Controller
 public class UserController {
-
+/*
+@RequestMapping("users/registration")
+    public String registration() {
+        return "users/registration";
+    }
+@RequestMapping(value = "users/registration", method=RequestMethod.POST)
+    public String registerUser(User user) {
+        return "users/login";
+    }
+ */
     @Autowired
     private PostService postService;
     @RequestMapping("users/login")
@@ -26,6 +35,10 @@ public class UserController {
   {
       return "users/registration";
   }
+    @RequestMapping(value = "users/registration", method=RequestMethod.POST)
+    public String registerUser(User user) {
+        return "users/login";
+    }
   @RequestMapping(value="users/login", method = RequestMethod.POST)
   public String loginUser(User user)
   {
