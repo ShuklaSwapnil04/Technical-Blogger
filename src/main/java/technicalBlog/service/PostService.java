@@ -7,9 +7,8 @@ import java.util.ArrayList;
 import java.util.Date;
 @Service
 public class PostService {
-    public ArrayList<Post>getAllPosts()
-    {
-        ArrayList<Post> posts = new ArrayList<>();
+    public ArrayList<Post>getAllPosts() {
+       /* ArrayList<Post> posts = new ArrayList<>();
         Post post1=new Post();
         post1.setTitle("Post 1");
         post1.setBody("Post Body 1");
@@ -45,6 +44,7 @@ public class PostService {
 
         return posts;
 
+    }*/
     }
 
     public void createPost(Post newPost) {
