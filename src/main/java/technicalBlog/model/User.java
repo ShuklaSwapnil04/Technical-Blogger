@@ -1,15 +1,20 @@
 package technicalBlog.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class User {
-    private String username;
+    @Id
+    private int UserId;
     private String password;
 
-    public String getUsername() {
-        return username;
+    public int getUserId() {
+        return UserId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserId(int userId) {
+        UserId = userId;
     }
 
     public String getPassword() {

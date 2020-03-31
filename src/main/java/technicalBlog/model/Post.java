@@ -1,8 +1,9 @@
 package technicalBlog.model;
 
+import javax.persistence.Entity;
 import java.util.Date;
 //POJO CLASS
-
+@Entity
 public class Post {
 
     private String title;
